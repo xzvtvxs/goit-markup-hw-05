@@ -573,6 +573,7 @@ input {
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
+  gap: 16px;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
@@ -594,3 +595,110 @@ input {
   fill: #fff;
   background-image: url(../images/icons.svg#icon-send);
 } */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* bottom: 0;
+  right: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 24px 24px;
+
+  min-height: 584px;
+  width: 408px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+  display: block;
+  margin-left: 336px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: #fff;
+}
+
+.form-paragraph {
+  margin-bottom: 16px;
+  width: 360px;
+  height: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.modal-label-title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-form-input {
+  outline: transparent;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+}
+
+.input-icon-wrapper {
+  position: relative;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.modal-text-area {
+  margin-bottom: 16px;
+  width: 100%;
+  resize: none;
+}
+
+.modal-label-checkbox {
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-form-btn {
+}
