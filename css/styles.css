@@ -671,7 +671,6 @@ input {
   justify-content: center;
   top: 24px;
   right: 24px;
-  display: block;
   margin-left: 336px;
   margin-bottom: 24px;
   border-radius: 50%;
@@ -843,7 +842,7 @@ input {
   margin: 0 auto;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
