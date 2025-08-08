@@ -586,16 +586,15 @@ input {
 .btn-subscribe {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
-  gap: 16px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #fff;
   background: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -605,6 +604,10 @@ input {
 .btn-subscribe:focus {
   color: #ffffff;
   background-color: #404bbf;
+}
+
+.btn-subscribe-icon {
+  margin-left: 16px;
 }
 
 /* .btn-subscribe::after {
@@ -646,7 +649,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 24px 24px;
+  padding: 72px 24px 24px 24px;
 
   min-height: 584px;
   width: 408px;
@@ -662,12 +665,22 @@ input {
 }
 
 .modal-close-btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
   display: block;
   margin-left: 336px;
   margin-bottom: 24px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -678,6 +691,10 @@ input {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: #fff;
+}
+
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-paragraph {
@@ -708,9 +725,11 @@ input {
 } */
 
 .modal-label-title {
+  display: block;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -722,6 +741,7 @@ input {
   border-radius: 4px;
   width: 100%;
   height: 40px;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -746,21 +766,24 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-container-textarea {
+  margin-bottom: 16px
+}
+
 .modal-text-area {
   outline: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
   width: 100%;
+  height: 120px;
   resize: none;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
-  height: 120px;
-
+  
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
