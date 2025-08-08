@@ -549,10 +549,10 @@ input {
 
 .footer-subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-input {
-  margin-right: 24px;
   outline: none;
   padding: 8px 16px;
   width: 264px;
